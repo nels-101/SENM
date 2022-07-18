@@ -1807,3 +1807,446 @@
 
 </html>
 <!--End of CPA-->
+<!--style.css-->
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&family=Lato:wght@100&family=Oswald:wght@200&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+
+}
+
+.container .content {
+    text-align: center;
+}
+
+.container .content h3 {
+    font-size: 30px;
+    color: #333;
+}
+
+.container .content h1 span {
+    color: gray;
+    text-decoration: beige underline;
+}
+
+.container .content h3 span {
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.container .content p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.container .content p strong {
+    color: green;
+}
+
+.container .content .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    background: #333;
+    color: #fff;
+    margin: 0 5px;
+    border-radius: 45px;
+}
+
+.container .content .btn:hover {
+    background: darkblue;
+}
+
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(./images/books.avif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.form-container form {
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+    box-shadow: 0 0 5px lightblue;
+}
+
+.form-container form h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: gold;
+
+}
+
+.form-container form input,
+.form-container form select {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid gray;
+
+
+}
+
+.form-container form input::-webkit-input-placeholder {
+    color: rgb(128, 128, 128);
+}
+
+.form-container form select option {
+    background: #fff
+}
+
+.form-container form .form-btn {
+    background: transparent;
+    color: red;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.form-container form .form-btn:hover {
+
+    color: white;
+}
+
+.form-container form p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: gainsboro;
+}
+
+.form-container form p a {
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+.form-container form .error_msg {
+    margin: 10px 0;
+    display: block;
+    background: crimson;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+header {
+    background: black;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    height: 80px;
+}
+
+.headerleft {
+    padding: 10px 10px 10px 30px;
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 50px;
+    font-family: roboto;
+}
+
+.headercenter {
+        padding: 10px;
+}
+
+
+.headercenter ul li {
+    display: inline-block;
+    height: 30px;
+    color: white;
+    margin: 20px;
+position: relative;
+
+}
+
+.headercenter ul li a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.headercenter ul li a:hover {
+    background: rgba(0, 128, 0, .7);
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+.headerright {margin-top: 10px;
+}
+
+
+.headerright ul {
+    display: flex;
+}
+
+.headerright ul li {
+    
+margin: 10px;
+}
+
+
+ul li .profile-pic-out {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+ul li .profile-pic img {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+
+}
+
+ul li .div-out {
+    margin-top: 40px;
+    display: none;
+    color: white;
+}
+
+ul li .profile-pic-out img:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 45px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+ul li .profile-pic-out:hover .div-out {
+    display: block;
+    position: relative;
+}
+
+ul li .profile-pic img {
+    width: 35px;
+    height: 35px;
+}
+
+#notification {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.qanda-body {
+    width: 100%;
+    min-height: 87vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .7),rgba(0, 0, 0, .7)), url(./images/qn.jpg);
+    background-size: 100% 100%;background-repeat: no-repeat;margin: auto;
+}
+
+.qanda-nav {
+    padding-top: 40px;
+    text-align: center;
+    color: goldenrod;
+}
+
+.qanda-nav h1 span {
+   
+    background: rgba(255, 255, 255, .3);
+    padding: 5px 20px;
+    border-radius: 45px;
+}
+
+.qanda-select {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.qanda-select h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#FFA500;
+}
+
+.qanda-institutions {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 50px;
+}
+
+.qanda-institutions div {
+    margin: 5px;
+}
+
+.qanda-institutions div a {
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: 800;
+}
+
+.qanda-institutions div a:hover {
+    color: gold;
+    text-decoration: underline;
+}
+
+.div-main p {
+    padding-left: 100px;
+    padding-right: 200px;
+    color: lightgray;
+}
+
+.div-back {
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.back {
+    
+    padding: 5px 13px;
+    width: 100px;
+    margin-left: -15px;
+    margin-top: 5px;
+    margin-bottom: 100px;
+    font-weight: 700;
+    font-size: 20px;
+    box-shadow: 0 0 2px;
+    position: relative;
+    border-radius: 7px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.div-back img {
+    width: 55px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5px 13px;
+    border-radius: 7px;
+}
+
+.div-back img:hover {
+    background-color: rgba(197, 114, 114, 0.3);
+    width: 55px;
+    cursor: pointer;
+    padding: 5px 13px;
+    border-radius: 7px;
+}
+
+.div-back:hover .back {
+    background-color: rgba(238, 223, 223, 0.7);
+    display: block;
+    color: black;
+}
+
+.tag {
+    font-size: 1.0rem;
+    margin: 1.5rem 1.2rem;
+    padding: 5px 1.8rem;
+    border-radius: 50px;
+    background-color: #efefef;
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.main-center {
+    background-color: white;
+    margin-left: 2px;
+    padding-top: 20px;
+
+}
+
+
+.main-center-select {
+    padding-left: 50px;
+}
+
+.main-center h1 {
+    padding: 10px 10px;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin-left: 20px;
+    border-radius: 50px;
+}
+
+<!--End-->
+<!--moreStyle-->
+@media(max-width:750px) {  
+    body{width: 100%;}  
+    .headerright {
+        margin-right: 10px;
+    }
+    .headercenter{display: none;}
+    main {
+        flex-direction: column;
+    }
+
+    .center {
+        width: 100%;
+        overflow: hidden;
+    }
+    .main-scroll-div {width: 100%;}
+    .subFriends {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .mainsubleft {
+    position: sticky;
+        width: 100%;
+        background-color: white;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        bottom: 0;
+    
+    }
+  .mainsubleft ul li{margin-bottom: 0;}
+    #menu-bar {
+        display: block;
+    }
+}
+     <!--End-->                                            
+                                                 
+
+                                                 
